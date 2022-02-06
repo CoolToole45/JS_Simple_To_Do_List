@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header {
+    background-color: orange;
+    text-shadow: 2px 2px black;
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    width: 60%;
+    margin: 2vh 0;
+}
+
+.title h1 {
+    text-align: center;
+    padding: 2vh 1vw;
+    color: rgb(1, 230, 247);
+    background-color: rgb(255, 102, 0);
+    border: 5px dashed orange;
+}
+
+.controlSec {
+    background-color: orange;
+}
+
+.inputDiv {
+    display: flex;
+    justify-content: space-around;
+    padding: 2vh 0;
+}
+
+.inputField input {
+    padding: 1vh 2vw 1vh 1vw;
+    outline: none;
+    font-size: 2vh;
+    border: 2px solid rgb(187, 75, 0);
+    border-bottom: 4px solid rgb(187, 75, 0);
+    border-right: 3px solid rgb(187, 75, 0);
+}
+
+.addTaskBtn button {
+    padding: 1vh;
+    color: black;
+    font-size: 2vh;
+    font-weight: bolder;
+    background-color: rgb(255, 102, 0);
+    border: none;
+    border-bottom: 3px solid rgb(187, 75, 0);
+    border-right: 2px solid rgb(187, 75, 0);
+    cursor: pointer;
+}
+
+.addTaskBtn button:active {
+    background-color: rgb(187, 75, 0);
+    border-bottom: 3px solid rgb(138, 55, 0);
+    border-right: 2px solid rgb(138, 55, 0);
+}
+
+ul li:nth-child(even) {
+    background-color: rgb(211, 211, 211);
+}
+
+.activeTask {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vh 2vw;
+    font-size: 2vh;
+    cursor: pointer;
+}
+
+.activeTask span {
+    border: 1px solid black;
+    padding: 0.1vh 1.5vw;
+    background-color: rgb(255, 115, 115);
+}
+
+.activeTask:hover {
+    color: white;
+    background-color: rgb(148, 148, 148);
+}
+
+.checkTask {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox {
+    margin-right: 3vw;
+}
+
+.checkbox {
+    height: 2.5vh;
+    width: 5vw;
+}
