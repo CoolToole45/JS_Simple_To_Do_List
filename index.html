@@ -17,62 +17,29 @@
     <section class="controlSec">
         <div class="inputDiv">
             <div class="inputField">
-                <input type="text" placeholder="Add a new task">
+                <input type="text" id="addTaskInp" maxlength="35" placeholder="Add a new task">
             </div>
             <div class="addTaskBtn">
-                <button>Add Task</button>
+                <button id="addTaskBtn">Add Task</button>
             </div>
         </div>
     </section>
     <section class="tasks">
-        <ul>
+        <ul id="mainTasks">
             <li><div class="activeTask">
-                <div class="checkTask">
-                    <span class="checkbox"></span>
-                    <p class="taskDesc">TASK TASK TASK</p>
-                </div>
-                <span class="removeBtn">&times;</span>
-            </div></li>     
-            
-            <li><div class="activeTask">
-                <div class="checkTask">
-                    <span class="checkbox"></span>
-                    <p class="taskDesc">TASK TASK TASK</p>
-                </div>
-                <span class="removeBtn">&times;</span>
-            </div></li>     
+                <p class="taskDesc">TASK TASK TASK</p>
+                <span class="removeBtn" onclick="removeTask()">&times;</span>
+            </div></li>
 
             <li><div class="activeTask">
-                <div class="checkTask">
-                    <span class="checkbox"></span>
-                    <p class="taskDesc">TASK TASK TASK</p>
-                </div>
-                <span class="removeBtn">&times;</span>
-            </div></li>     
+                <p class="taskDesc">A BIGGER TASK THAT NEEDS MORE SPACE ON SCREEN</p>
+                <span class="removeBtn" onclick="removeTask()">&times;</span>
+            </div></li>  
 
             <li><div class="activeTask">
-                <div class="checkTask">
-                    <span class="checkbox"></span>
-                    <p class="taskDesc">TASK TASK TASK</p>
-                </div>
-                <span class="removeBtn">&times;</span>
-            </div></li>     
-
-            <li><div class="activeTask">
-                <div class="checkTask">
-                    <span class="checkbox"></span>
-                    <p class="taskDesc">TASK TASK TASK</p>
-                </div>
-                <span class="removeBtn">&times;</span>
-            </div></li>     
-
-            <li><div class="activeTask">
-                <div class="checkTask">
-                    <span class="checkbox"></span>
-                    <p class="taskDesc">TASK TASK TASK</p>
-                </div>
-                <span class="removeBtn">&times;</span>
-            </div></li>     
+                <p class="taskDesc">TASK TASK TASK</p>
+                <span class="removeBtn" onclick="removeTask()">&times;</span>
+            </div></li>  
         </ul>
     </section>
 </body>

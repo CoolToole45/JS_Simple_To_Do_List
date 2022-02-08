@@ -75,7 +75,7 @@ ul li:nth-child(even) {
     cursor: pointer;
 }
 
-.activeTask span {
+.removeBtn {
     border: 1px solid black;
     padding: 0.1vh 1.5vw;
     background-color: rgb(255, 115, 115);
@@ -86,16 +86,17 @@ ul li:nth-child(even) {
     background-color: rgb(148, 148, 148);
 }
 
-.checkTask {
-    display: flex;
-    align-items: center;
+.taskDesc {
+    width: 100%;
+    padding: 0.5vh 3vw;
 }
 
-.checkbox {
-    margin-right: 3vw;
-}
-
-.checkbox {
-    height: 2.5vh;
-    width: 5vw;
+.crossOut {
+    text-decoration: line-through;
+    background-color: greenyellow;
+    color: black;
+    width: auto;
+    border: 1px solid rgb(120, 179, 31);
+    border-bottom: 3px solid rgb(120, 179, 31);
+    border-right: 2px solid rgb(120, 179, 31);
 }
